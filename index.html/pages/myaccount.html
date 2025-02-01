@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book an Appointment | Eat Well</title>
+    <link rel="stylesheet" href="eatwell.css">
 </head>
 <body>
-<h1>Welcome!</h1>
-<p>Thank you for logging in. Your information has been received.</p>
-<h2>Appointments</h2>
-<p>Please select a date and time for an appointment:</p>
-<form action="appointmentconfirmation.html" method="post">
-<table >
-<tr>
-<th>Date</th>
-<th>Time</th>
-</tr>
-<tr>
-<td>
-<label for="appointment-date">Date:</label>
-<input type="text" name="appointment-date" placeholder="e.g., 2024-12-24">
-</td>
-<td>
-<label for="appointment-time">Time:</label>
-<input type="text" name="appointment-time" placeholder="e.g., 18:00">
-</td>
-</tr>
-</table>
-<p>
-<input type="submit" value="Confirm Appointment">
-</p>
-</form>  
+
+<header>
+    <h1>Welcome to Eat Well</h1>
+</header>
+
+<section>
+    <p>Thank you for logging in. Your information has been recorded. Now, you can choose a date and time for your appointment.</p>
+</section>
+
+<section>
+    <h2>Book an Appointment</h2>
+    <p>Select the date and time that works best for you:</p>
+
+    <form action="appointmentconfirmation.html" method="GET">
+        <label for="appointment-date"><strong>Date:</strong></label>
+        <input type="date" id="appointment-date"      name="appointment-date" required>
+
+        <label for="appointment-time"><strong>Time:</strong></label>
+        <input type="time" id="appointment-time" name="appointment-time" required>
+
+        <button type="submit">Confirm Appointment</button>
+    </form>
+</section>
+
+<footer>
+    <p> 2024 Eat Well. All rights reserved           .</p>
+</footer>
+
 </body>
 </html>

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access your EatWell Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Your Eat Well Account</title>
+    <link rel="stylesheet" href="eatwell.css">
 </head>
 <body>
 
-<!-- Login Section -->
+<header>
+    <h1>Welcome to Eat Well</h1>
+</header>
+
 <section>
-    <h1>Log In</h1>
-    <form action="/index.html/pages/myaccount.html" method="post">
+    <h2>Log In</h2>
+    <p>Access your account to manage your bookings and preferences.</p>
+    
+    <form action="myaccount.html" method="GET">
         <div>
             <label for="loginUsername">Username:</label>
             <input type="text" id="loginUsername" name="username" maxlength="10" required>
@@ -25,16 +31,17 @@
     </form>
 </section>
 
-<!-- Registration Section -->
 <section>
-    <h2>Register</h2>
-    <form action="/index.html/pages/myaccount.html" method="post">
+    <h2>Create an Account</h2>
+    <p>New here? Sign up to start booking your favorite meals.</p>
+    
+    <form action="myaccount.html" method="GET">
         <div>
             <label for="registerUsername">Username:</label>
             <input type="text" id="registerUsername" name="username" maxlength="10" required>
         </div>
         <div>
-            <label for="registerPassword">New Password:</label>
+            <label for="registerPassword">Password:</label>
             <input type="password" id="registerPassword" name="password" maxlength="10" required>
         </div>
         <div>
@@ -42,8 +49,15 @@
             <input type="email" id="registerEmail" name="email" required>
         </div>
         <div>
-            <input type="submit" value="Register">
+            <button type="submit">Register</button>
         </div>
     </form>
 </section>
+
+<footer>
+    <p> 2024 Eat Well. All the rights reserved.</p>
+</footer>
+
+</body>
 </html>
+
